@@ -1,0 +1,11 @@
+.para{
+    margin-top: 50px;
+    margin-left: 50px;
+    height: 200px;
+    width: 400px;
+    border: 2px solid #444444;
+}
+#pa{
+    padding: 20px;
+    text-align: center;
+}

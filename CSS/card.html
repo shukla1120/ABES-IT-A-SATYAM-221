@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Three Image Boxes</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 50px;
+      background-color: white;
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: aliceblue;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+    }
+
+    .box img {
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 5px;
+    }
+    .box:hover{
+        background-color: blue;
+        box-shadow: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center;">Cafe</h1>
+  <div class="container">
+    <div class="box">
+      <img src="https://i0.wp.com/www.chitrasfoodbook.com/wp-content/uploads/2016/02/cold-coffee-recipe-1.jpg?w=1200&ssl=1" alt="Image 1" />
+    </div>
+    <div class="box">
+      <img src="https://png.pngtree.com/png-clipart/20241108/original/pngtree-delicious-and-testy-cheese-burger-png-image_16763714.png" alt="Image 2" />
+    </div>
+    <div class="box">
+      <img src="https://m.media-amazon.com/images/I/51WRz+hQvHL._UF1000,1000_QL80_.jpg" alt="Image 3" />
+    </div>
+  </div>
+</body>
+</html>
