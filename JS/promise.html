@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const mypromise = new Promise((resolve, reject) => {
+        const pass = "sa@32155626";
+        if (pass.length > 8) {
+            resolve("Password length is ok");
+        } else {
+            reject("Password is shorter");
+        }
+    });
+
+    mypromise
+        .then(message => console.log(" Success:", message))
+        .catch(error => console.log("Error:", error))
+        .finally(message=> console.log("We are student of abes"));
+</script>
+
+</body>
+</html>

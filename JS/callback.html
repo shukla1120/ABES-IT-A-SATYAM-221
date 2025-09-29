@@ -7,14 +7,29 @@
 </head>
 <body>
     <script>
-        function sum(a,b){
-            console.log(a+b);
+        // function sum(a,b){
+         //   console.log(a+b);
+        //}
+        //function cal(a,b,callback){
+          //  callback(a,b);
+        //}
+       // cal(10,20,sum); 
+       function getdata(dataid, getnextdata) {
+    setTimeout(() => {
+        console.log("data", dataid);
+        if (getnextdata) {
+            getnextdata();
         }
-        function cal(a,b,callback){
-            callback(a,b);
-        }
-        cal(10,20,sum);
-        
+    }, 3000);
+}
+
+getdata(1, () => {
+    getdata(2, () => {
+        getdata(3, () => {
+        })
+    })
+});
+
     </script>
 </body>
 </html>
