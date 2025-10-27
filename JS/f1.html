@@ -1,0 +1,122 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <!-- <style>
+    form {
+      margin: 20px;
+      font-family: Arial, sans-serif;
+    }
+    label {
+      display: inline-block;
+      width: 100px;
+      margin-bottom: 6px;
+    }
+    input[type="text"], select, textarea {
+      padding: 4px;
+      width: 180px;
+    }
+    textarea {
+      width: 300px;
+      height: 60px;
+    } -->
+  <!-- </style> -->
+<!-- </head>
+<body>
+  <p>(i) Write HTML code to create the following Registration Form:</p>
+
+  <form>
+    <label>Firstname:</label>
+    <input type="text" name="fname"><br><br>
+
+    <label>Middlename:</label>
+    <input type="text" name="mname"><br>
+
+    <label>Lastname:</label>
+    <input type="text" name="lname"><br><br>
+
+    <label>Course :</label>
+    <select name="course">
+      <option>Course</option>
+      <option>B.Tech</option>
+      <option>MCA</option>
+      <option>BCA</option>
+      <option>M.Tech</option>
+    </select><br><br>
+
+    <label>Gender :</label><br>
+    <input type="radio" name="gender" value="male"> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Other<br><br>
+
+    <label>Phone :</label>
+    <input type="text" value="+91" readonly style="width:40px;">
+    <input type="text" name="phone"><br><br>
+
+    <label>Address</label><br>
+    <textarea name="address"></textarea>
+  </form>
+</body>
+</html> --> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+</head>
+<body>
+  <p>(i) Write HTML code to create the following Registration Form:</p>
+
+  <form>
+    <!-- <table border="0" cellspacing="5" cellpadding="3"> -->
+      <tr>
+        <td>Firstname:</td>
+        <td><input type="text" name="fname"></td>
+      </tr>
+      <tr>
+        <td>Middlename:</td>
+        <td><input type="text" name="mname"></td>
+      </tr>
+      <tr>
+        <td>Lastname:</td>
+        <td><input type="text" name="lname"></td>
+      </tr>
+      <tr>
+        <td>Course:</td>
+        <td>
+          <select name="course">
+            <option>Course</option>
+            <option>B.Tech</option>
+            <option>MCA</option>
+            <option>BCA</option>
+            <option>M.Tech</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Gender:</td>
+        <td>
+          <input type="radio" name="gender" value="male"> Male<br>
+          <input type="radio" name="gender" value="female"> Female<br>
+          <input type="radio" name="gender" value="other"> Other
+        </td>
+      </tr>
+      <tr>
+        <td>Phone:</td>
+        <td>
+          <input type="text" value="+91" readonly size="3">
+          <input type="text" name="phone" size="15">
+        </td>
+      </tr>
+      <tr>
+        <td>Address:</td>
+        <td><textarea name="address" rows="4" cols="30"></textarea></td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
+
